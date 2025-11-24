@@ -9,3 +9,5 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+    - name: show system info
+      run: uname -a
