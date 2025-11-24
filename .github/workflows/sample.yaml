@@ -11,3 +11,5 @@ jobs:
       uses: actions/checkout@v4
     - name: show system info
       run: uname -a
+    - name: Install dependencies
+      run: echo "installing dependencies...!!"
