@@ -1,0 +1,12 @@
+name: system info
+on: workflow_dispatch
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+        - name: print hostname
+          run: hostname
+        - name: kernal info
+          run: uname -a
+        - name: show os-info
+          run: cat /etc/os-release
