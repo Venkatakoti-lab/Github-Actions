@@ -1,6 +1,6 @@
 name: File Provisioners in GIT_HUB
 
-on: workflow_dispatch
+on: workflow_dispatch  ##by using this we do manual trigger
 
 jobs:
     demo_workflows:
