@@ -1,7 +1,7 @@
 name: system info
 on: workflow_dispatch
 jobs:
-  demo:
+  system:
     runs-on: ubuntu-latest
     steps:
         - name: print hostname
