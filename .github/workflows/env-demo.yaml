@@ -1,0 +1,14 @@
+name: env-demo
+on: workflow_dispatch
+
+jobs:
+  env-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print pre defined env
+        run: echo "repo name is $GITHUB_REPOSITORY"
+      - name: print custom env 
+        run: |
+          MYNAME= "venkat"
+          COURSE= "GA"
+          echo "Hi my name is $MYNAME and i practised $COURSE"
