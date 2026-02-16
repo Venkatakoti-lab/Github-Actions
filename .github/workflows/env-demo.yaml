@@ -9,6 +9,6 @@ jobs:
         run: echo "repo name is $GITHUB_REPOSITORY"
       - name: print custom env 
         run: |
-          MYNAME= "venkat"
-          COURSE= "GA"
+          MYNAME="venkat"
+          COURSE="GA"
           echo "Hi my name is $MYNAME and i practised $COURSE"
