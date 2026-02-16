@@ -1,0 +1,19 @@
+name: this job related to manual_trigger
+
+on: workflow_dispatch
+jobs:
+  manual-demo:
+    runs-on: ubuntu-latest
+    steps:
+        - name: hello devops
+          run: echo "hello devops engineer" > demo.txt
+
+        - name: see the content of the file
+          run: cat demo.txt
+
+        - name: show the date 
+          run: date
+          
+        - name: present working directory
+          run: pwd
+  
