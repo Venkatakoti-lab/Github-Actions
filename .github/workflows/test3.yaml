@@ -3,8 +3,9 @@ name: File Operations in github
 on: push
 
 jobs:
-    runs-on: ubuntu-latest
-    steps:
+    files:
+        runs-on: ubuntu-latest
+        steps:
         - name: create a one file
           run: echo "WELCOME TO GITHUB_ACTIONS" >devops.txt
         - name: Display the content of the file
