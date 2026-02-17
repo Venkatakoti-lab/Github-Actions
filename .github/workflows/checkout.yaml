@@ -2,11 +2,11 @@ name: checkout-demo
 on: workflow_dispatch 
 jobs:
   checkout-sample:
-  runs-on: ubuntu-latest
-    steps:
-      - name: checkout repository
-        uses: actions/checkout@v6
+    runs-on: ubuntu-latest
+      steps:
+        - name: checkout repository
+          uses: actions/checkout@v6
 
-      - name: see the sample content
-        run: cat sample.txt
+        - name: see the sample content
+          run: cat sample.txt
        
