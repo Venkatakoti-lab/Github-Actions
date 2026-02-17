@@ -1,0 +1,8 @@
+name: without checkout
+on: workflow_dispatch
+jobs:
+  checkout:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: get the file content
+        run: cat sample.txt
