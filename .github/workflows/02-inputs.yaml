@@ -22,7 +22,11 @@ on:
       environment:
         description: 'Environment to run tests'
         required: true
-        type: environment
+        type: choice
+        options:
+          - dev
+          - staging
+          - prod
 jobs:
   print-tag:
     runs-on: ubuntu-latest
