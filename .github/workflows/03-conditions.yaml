@@ -1,0 +1,13 @@
+name: conditions
+on:
+  workflow_dispatch:
+jobs:
+  conditions-demo:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: step1 
+        if: github.ref == 'refs/heads/feature-**'
+        run: echo "this is triggered through only feature branch"
+      - name: step2
+        if: github.ref == 'refs/heads/main'
+        run: echo "this should be triggered only main branch"
