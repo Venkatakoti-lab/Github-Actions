@@ -1,0 +1,12 @@
+name: example flow
+on:
+  workflow_dispatch:
+jobs:
+  example-demo:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: step1
+        run: echo "Hello world"
+      - name: step2
+        run: echo "Hello github actions"
+  
