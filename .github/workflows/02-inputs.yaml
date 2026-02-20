@@ -22,7 +22,6 @@ on:
       environment:
         description: 'Environment to run tests'
         required: true
-        default: 'staging'
         type: environment
 jobs:
   print-tag:
